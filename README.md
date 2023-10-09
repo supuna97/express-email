@@ -9,13 +9,13 @@ This is a simple email sender using express and nodemailer
 3. create a `.env` file in the root directory and add the following:
 ```
 MAIL_DRIVER=smtp
-MAIL_HOST=
+MAIL_HOST=smtp.gmail.com
 MAIL_PORT=587
-MAIL_USERNAME=
-MAIL_PASSWORD=
+MAIL_USERNAME=your email address
+MAIL_PASSWORD=your password
 MAIL_ENCRYPTION=tls
-MAIL_FROM=
-MAIL_FROM_NAME=
+MAIL_FROM=your email address
+MAIL_FROM_NAME=your name
 ```
 4. run `npm start`
 5. open `http://localhost:3000/v1/email/send` in your postman
@@ -43,7 +43,3 @@ MAIL_FROM_NAME=
 
 ## version
 1.0.0
-
-## license
-Apache License 2.0
-```
